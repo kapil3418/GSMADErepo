@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Generated artifacts -- reproducible from scripts/, not checked in
+data/instances/*.json
+!data/instances/README.md
+data/seeds/*.json
+!data/seeds/README.md
+results/*.csv
+results/*.png
+results/*.json
+results/*.md
+results/checkpoints/
+!results/README.md
+.DS_Store

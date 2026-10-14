@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gsmade"
+version = "0.1.0"
+description = "GS-MADE: Graph-Seeded Memetic Adaptive Differential Evolution for multi-objective workflow scheduling across IoT-fog-cloud, with 11 reimplemented baselines, a three-tier simulator, and the full evaluation/generalization pipeline used in the paper."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Kapil Kumar" },
+    { name = "Manjit Singh" },
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "networkx>=3.1",
+    "pyyaml>=6.0",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+include = ["gsmade*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
